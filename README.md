@@ -1,33 +1,29 @@
-# 🚀 CI/CD Pipeline to Cloud Run on Google Cloud
+# CI/CD → Cloud Run (Google Cloud)
 
-This project demonstrates a complete CI/CD pipeline on Google Cloud Platform.
-A containerized web application is automatically built and deployed to **Cloud Run**
-using **Cloud Build** after each push to the GitHub repository.
-
----
-
-## 📌 Project Overview
-
-The goal of this project is to show how to:
-- containerize an application using Docker
-- automatically build and push container images
-- deploy applications to Cloud Run using CI/CD
-- manage permissions using IAM and service accounts
-
-The entire deployment process is fully automated and does not require manual steps.
+Projekt prezentuje **w pełni automatyczny pipeline CI/CD** na Google Cloud Platform.
+Aplikacja jest konteneryzowana w Dockerze i **automatycznie budowana oraz wdrażana do Cloud Run** po każdym pushu do repozytorium GitHub.
 
 ---
 
-## 🧱 Architecture
+## 🎯 Cel projektu
+
+Celem projektu było pokazanie:
+- praktycznej znajomości **CI/CD**
+- pracy z **kontenerami (Docker)**
+- automatycznego deployu do **Cloud Run**
+- konfiguracji **IAM i kont serwisowych**
+
+Projekt nie wymaga ręcznych wdrożeń – cały proces jest zautomatyzowany.
+
+---
+
+## 🧱 Architektura
 
 ```text
-GitHub Repository
-        │
-        ▼
+GitHub
+  ↓
 Cloud Build (CI/CD)
-        │
-        ▼
+  ↓
 Artifact Registry
-        │
-        ▼
-Cloud Run (Serverless)
+  ↓
+Cloud Run (serverless)
